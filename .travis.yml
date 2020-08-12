@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+    - 'lts/*'
+
+env:
+    global:
+        - NODE_ENV=test
+
+script: npm run build
+
+branches:
+    only:
+        - master
